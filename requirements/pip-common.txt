@@ -1,0 +1,36 @@
+# Core CI/testing
+pytest
+pytest-cov
+pytest-xdist
+ruff
+mypy
+yamllint
+jsonschema
+pydantic
+pyyaml
+jinja2
+jmespath
+requests
+httpx
+rich
+typer
+
+# Network automation
+netmiko
+scrapli
+scrapli-community
+nornir
+nornir-netmiko
+nornir-scrapli
+nornir-utils
+napalm
+ncclient
+paramiko
+textfsm
+ntc-templates
+ttp
+pybatfish
+
+# Source of truth and inventory APIs
+pynautobot
+pynetbox

@@ -8,7 +8,7 @@ COPY requirements/dnf.txt /tmp/dnf.txt
 COPY requirements/pip.txt /tmp/pip.txt
 
 RUN dnf install -y dnf-plugins-core epel-release findutils && \
-    xargs -a /tmp/dnf.txt dnf install -y && \
+    xargs -a /tmp/dnf.txt dnf install -y --allowerasing && \
     dnf clean all
 
 RUN if [ "$PYTHON_VERSION" != "system" ]; then \

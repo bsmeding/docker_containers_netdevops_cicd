@@ -29,6 +29,9 @@ get_python_version() {
     debian13|debian)
       echo "3.13"
       ;;
+    rockylinux8)
+      echo "3.11"
+      ;;
     *)
       echo "system"
       ;;

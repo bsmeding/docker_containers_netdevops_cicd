@@ -14,9 +14,14 @@ requests
 httpx
 rich
 typer
+openpyxl
+sqlmodel
+wingpy
 
 # Network automation
+asyncssh
 netmiko
+netutils
 scrapli
 scrapli-community
 nornir
@@ -30,6 +35,9 @@ textfsm
 ntc-templates
 ttp
 pybatfish
+dnacentersdk
+jc
+jtbl
 
 # Source of truth and inventory APIs
 pynautobot

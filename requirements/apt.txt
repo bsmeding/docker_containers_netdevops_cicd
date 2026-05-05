@@ -1,6 +1,7 @@
 bash
 ca-certificates
 curl
+dnsutils
 git
 gnupg
 openssh-client
@@ -9,7 +10,12 @@ rsync
 iproute2
 iputils-ping
 net-tools
+nmap
 jq
+sqlite3
+tcpdump
+traceroute
+unzip
 wget
 build-essential
 libffi-dev

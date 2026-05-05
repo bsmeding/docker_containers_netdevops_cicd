@@ -39,10 +39,11 @@ Each image includes:
 - Python 3 with a virtual environment at `/opt/venv`
 - Network automation libraries: Netmiko, Scrapli, Nornir, NAPALM, ncclient, Paramiko
 - Source-of-truth clients: pynautobot and pynetbox
-- Config and data tooling: Jinja2, YAML, JSON Schema, JMESPath, TTP, TextFSM, ntc-templates
+- Config and data tooling: Jinja2, YAML, JSON Schema, JMESPath, TTP, TextFSM, ntc-templates, jc, jtbl, OpenPyXL, SQLModel
+- Network parsing and platform helpers: asyncssh, dnacentersdk, netutils, wingpy
 - CI tooling: pytest, pytest-cov, pytest-xdist, ruff, mypy, yamllint
 - API tooling: requests, httpx, rich, typer
-- Common shell utilities: git, curl, jq, SSH client, sshpass, rsync
+- Common shell utilities: git, curl, jq, SSH client, sshpass, rsync, DNS tools, nmap, tcpdump, traceroute, unzip, sqlite
 
 Ansible is intentionally not included. Use the `ansible_cicd` images when you need Molecule or Ansible role testing.
 

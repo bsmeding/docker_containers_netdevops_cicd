@@ -4,21 +4,15 @@ set -eo pipefail
 
 get_build_info() {
   case "$1" in
-    ubuntu2004) echo "ubuntu.Dockerfile ubuntu:20.04" ;;
-    ubuntu2204) echo "ubuntu.Dockerfile ubuntu:22.04" ;;
     ubuntu2404) echo "ubuntu.Dockerfile ubuntu:24.04" ;;
     ubuntu2604) echo "ubuntu.Dockerfile ubuntu:26.04" ;;
     ubuntu) echo "ubuntu.Dockerfile ubuntu:26.04" ;;
-    debian11) echo "debian.Dockerfile debian:bullseye" ;;
     debian12) echo "debian.Dockerfile debian:bookworm" ;;
     debian13) echo "debian.Dockerfile debian:trixie" ;;
     debian) echo "debian.Dockerfile debian:trixie" ;;
     rockylinux8) echo "rocky.Dockerfile rockylinux:8" ;;
     rockylinux9) echo "rocky.Dockerfile rockylinux:9" ;;
-    rockylinux10) echo "rocky.Dockerfile rockylinux:10" ;;
-    rockylinux) echo "rocky.Dockerfile rockylinux:10" ;;
-    alpine3.20) echo "alpine.Dockerfile alpine:3.20" ;;
-    alpine3.21) echo "alpine.Dockerfile alpine:3.21" ;;
+    rockylinux) echo "rocky.Dockerfile rockylinux:9" ;;
     alpine3.22) echo "alpine.Dockerfile alpine:3.22" ;;
     alpine3.23) echo "alpine.Dockerfile alpine:3.23" ;;
     alpine3) echo "alpine.Dockerfile alpine:3.23" ;;
@@ -27,7 +21,7 @@ get_build_info() {
 }
 
 get_all_tags() {
-  echo "ubuntu2004 ubuntu2204 ubuntu2404 ubuntu2604 ubuntu debian11 debian12 debian13 debian rockylinux8 rockylinux9 rockylinux10 rockylinux alpine3.20 alpine3.21 alpine3.22 alpine3.23 alpine3"
+  echo "ubuntu2404 ubuntu2604 ubuntu debian12 debian13 debian rockylinux8 rockylinux9 rockylinux alpine3.22 alpine3.23 alpine3"
 }
 
 get_python_version() {
@@ -77,7 +71,7 @@ for tag in "${tags_to_build[@]}"; do
 
   if [[ -n "$PUSH_FLAG" ]]; then
     case "$tag" in
-      rockylinux8|ubuntu2004|debian11)
+      rockylinux8)
         platforms="linux/amd64"
         ;;
       *)

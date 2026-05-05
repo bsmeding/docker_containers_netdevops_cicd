@@ -1,4 +1,4 @@
-ARG BASE_IMAGE=rockylinux:10
+ARG BASE_IMAGE=rockylinux:9
 ARG PYTHON_VERSION=system
 FROM ${BASE_IMAGE}
 

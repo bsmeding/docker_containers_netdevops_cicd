@@ -40,7 +40,7 @@ Each image includes:
 - Network automation libraries: Netmiko, Scrapli, Nornir, NAPALM, ncclient, Paramiko
 - Source-of-truth clients: pynautobot and pynetbox
 - Config and data tooling: Jinja2, YAML, JSON Schema, JMESPath, TTP, TextFSM, ntc-templates, jc, jtbl, OpenPyXL, SQLModel
-- Network parsing and platform helpers: asyncssh, dnacentersdk, netutils, wingpy
+- Network parsing and platform helpers: asyncssh, dnacentersdk, netutils
 - CI tooling: pytest, pytest-cov, pytest-xdist, ruff, mypy, yamllint
 - API tooling: requests, httpx, rich, typer
 - Common shell utilities: git, curl, jq, SSH client, sshpass, rsync, DNS tools, nmap, tcpdump, traceroute, unzip, sqlite
